@@ -106,7 +106,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'delete') {
                                 <td><?= $row['TenDichVu'] ?></td>
                                 <td><?= $row['MoTa'] ?></td>
                                 <td><?= number_format($row['GiaTien']) ?> VNĐ</td>
-                                <td><?= $row['ThoiGian'] ?> phút</td>
+                                <td><?= $row['ThoiGianChup'] ?> phút</td>
                                 <td>
                                     <span class="badge badge-<?= $row['TrangThai'] ? 'success' : 'danger' ?>">
                                         <?= $row['TrangThai'] ? 'Hoạt động' : 'Không hoạt động' ?>
@@ -118,7 +118,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'delete') {
                                             data-name="<?= $row['TenDichVu'] ?>"
                                             data-desc="<?= $row['MoTa'] ?>"
                                             data-price="<?= $row['GiaTien'] ?>"
-                                            data-time="<?= $row['ThoiGian'] ?>"
+                                            data-time="<?= $row['TrangThai'] ?>"
                                             data-status="<?= $row['TrangThai'] ?>">
                                         <i class="fas fa-edit"></i>
                                     </button>

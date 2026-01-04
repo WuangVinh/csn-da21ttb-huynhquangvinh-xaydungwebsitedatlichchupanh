@@ -59,7 +59,7 @@ if(isset($_GET['id'])) {
                 </tr>
                 <tr>
                     <th>Giờ đặt:</th>
-                    <td><?= $booking['GioDat'] ?></td>
+                    <td><?= $booking['GioChup'] ?></td>
                 </tr>
                 <tr>
                     <th>Ghi chú:</th>
